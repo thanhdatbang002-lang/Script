@@ -1,0 +1,1048 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+
+designed using localmaze gui creator
+]=]
+
+local LMG2L = {};
+
+LMG2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+LMG2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+LMG2L["Frame_2"] = Instance.new("Frame", LMG2L["ScreenGui_1"]);
+LMG2L["Frame_2"]["BorderSizePixel"] = 3;
+LMG2L["Frame_2"]["BackgroundColor3"] = Color3.fromRGB(23, 23, 23);
+LMG2L["Frame_2"]["Size"] = UDim2.new(0, 376, 0, 406);
+LMG2L["Frame_2"]["Position"] = UDim2.new(0, 66, 0, -16);
+LMG2L["Frame_2"]["BorderColor3"] = Color3.fromRGB(11, 178, 255);
+
+
+LMG2L["LocalScript_3"] = Instance.new("LocalScript", LMG2L["Frame_2"]);
+
+
+
+LMG2L["ScrollingFrame_4"] = Instance.new("ScrollingFrame", LMG2L["Frame_2"]);
+LMG2L["ScrollingFrame_4"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+LMG2L["ScrollingFrame_4"]["BorderSizePixel"] = 0;
+LMG2L["ScrollingFrame_4"]["AutoLocalize"] = false;
+LMG2L["ScrollingFrame_4"]["ElasticBehavior"] = Enum.ElasticBehavior.Always;
+LMG2L["ScrollingFrame_4"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["ScrollingFrame_4"]["HorizontalScrollBarInset"] = Enum.ScrollBarInset.ScrollBar;
+LMG2L["ScrollingFrame_4"]["Size"] = UDim2.new(0, 360, 0, 388);
+LMG2L["ScrollingFrame_4"]["Position"] = UDim2.new(0, 8, 0, 8);
+LMG2L["ScrollingFrame_4"]["ScrollBarThickness"] = 0;
+
+
+LMG2L["TextButton15_5"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton15_5"]["TextWrapped"] = true;
+LMG2L["TextButton15_5"]["BorderSizePixel"] = 2;
+LMG2L["TextButton15_5"]["TextScaled"] = true;
+LMG2L["TextButton15_5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton15_5"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton15_5"]["Size"] = UDim2.new(0, 108, 0, 50);
+LMG2L["TextButton15_5"]["BorderColor3"] = Color3.fromRGB(11, 178, 255);
+LMG2L["TextButton15_5"]["Text"] = [[coolkiddfull]];
+LMG2L["TextButton15_5"]["Name"] = [[TextButton15]];
+LMG2L["TextButton15_5"]["Position"] = UDim2.new(0, 118, 0, 278);
+
+
+LMG2L["LocalScript_6"] = Instance.new("LocalScript", LMG2L["TextButton15_5"]);
+
+
+
+LMG2L["TextButton7_7"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton7_7"]["TextWrapped"] = true;
+LMG2L["TextButton7_7"]["BorderSizePixel"] = 2;
+LMG2L["TextButton7_7"]["TextScaled"] = true;
+LMG2L["TextButton7_7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton7_7"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton7_7"]["Size"] = UDim2.new(0, 108, 0, 50);
+LMG2L["TextButton7_7"]["BorderColor3"] = Color3.fromRGB(11, 178, 255);
+LMG2L["TextButton7_7"]["Text"] = [[666]];
+LMG2L["TextButton7_7"]["Name"] = [[TextButton7]];
+LMG2L["TextButton7_7"]["Position"] = UDim2.new(0, 232, 0, 162);
+
+
+LMG2L["LocalScript_8"] = Instance.new("LocalScript", LMG2L["TextButton7_7"]);
+
+
+
+LMG2L["TextButton2_9"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton2_9"]["TextWrapped"] = true;
+LMG2L["TextButton2_9"]["BorderSizePixel"] = 2;
+LMG2L["TextButton2_9"]["TextScaled"] = true;
+LMG2L["TextButton2_9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton2_9"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton2_9"]["Size"] = UDim2.new(0, 108, 0, 50);
+LMG2L["TextButton2_9"]["BorderColor3"] = Color3.fromRGB(11, 178, 255);
+LMG2L["TextButton2_9"]["Text"] = [[decal]];
+LMG2L["TextButton2_9"]["Name"] = [[TextButton2]];
+LMG2L["TextButton2_9"]["Position"] = UDim2.new(0, 4, 0, 104);
+
+
+LMG2L["LocalScript_a"] = Instance.new("LocalScript", LMG2L["TextButton2_9"]);
+
+
+
+LMG2L["TextButton8_b"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton8_b"]["TextWrapped"] = true;
+LMG2L["TextButton8_b"]["BorderSizePixel"] = 2;
+LMG2L["TextButton8_b"]["TextScaled"] = true;
+LMG2L["TextButton8_b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton8_b"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton8_b"]["Size"] = UDim2.new(0, 108, 0, 50);
+LMG2L["TextButton8_b"]["BorderColor3"] = Color3.fromRGB(11, 178, 255);
+LMG2L["TextButton8_b"]["Text"] = [[unanchor]];
+LMG2L["TextButton8_b"]["Name"] = [[TextButton8]];
+LMG2L["TextButton8_b"]["Position"] = UDim2.new(0, 118, 0, 220);
+
+
+LMG2L["LocalScript_c"] = Instance.new("LocalScript", LMG2L["TextButton8_b"]);
+
+
+
+LMG2L["TextButton6_d"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton6_d"]["TextWrapped"] = true;
+LMG2L["TextButton6_d"]["BorderSizePixel"] = 2;
+LMG2L["TextButton6_d"]["TextScaled"] = true;
+LMG2L["TextButton6_d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton6_d"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton6_d"]["Size"] = UDim2.new(0, 108, 0, 50);
+LMG2L["TextButton6_d"]["BorderColor3"] = Color3.fromRGB(11, 178, 255);
+LMG2L["TextButton6_d"]["Text"] = [[particles]];
+LMG2L["TextButton6_d"]["Name"] = [[TextButton6]];
+LMG2L["TextButton6_d"]["Position"] = UDim2.new(0, 118, 0, 162);
+
+
+LMG2L["LocalScript_e"] = Instance.new("LocalScript", LMG2L["TextButton6_d"]);
+
+
+
+LMG2L["TextButton5_f"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton5_f"]["TextWrapped"] = true;
+LMG2L["TextButton5_f"]["BorderSizePixel"] = 2;
+LMG2L["TextButton5_f"]["TextScaled"] = true;
+LMG2L["TextButton5_f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton5_f"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton5_f"]["Size"] = UDim2.new(0, 108, 0, 50);
+LMG2L["TextButton5_f"]["BorderColor3"] = Color3.fromRGB(11, 178, 255);
+LMG2L["TextButton5_f"]["Text"] = [[skybox 2]];
+LMG2L["TextButton5_f"]["Name"] = [[TextButton5]];
+LMG2L["TextButton5_f"]["Position"] = UDim2.new(0, 4, 0, 162);
+
+
+LMG2L["LocalScript_10"] = Instance.new("LocalScript", LMG2L["TextButton5_f"]);
+
+
+
+LMG2L["TextLabel2_11"] = Instance.new("TextLabel", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextLabel2_11"]["TextWrapped"] = true;
+LMG2L["TextLabel2_11"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel2_11"]["TextScaled"] = true;
+LMG2L["TextLabel2_11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel2_11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel2_11"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel2_11"]["Size"] = UDim2.new(0, 230, 0, 24);
+LMG2L["TextLabel2_11"]["Text"] = [[==///////==]];
+LMG2L["TextLabel2_11"]["Name"] = [[TextLabel2]];
+LMG2L["TextLabel2_11"]["Position"] = UDim2.new(0, 30, 0, 54);
+
+
+LMG2L["TextLabel_12"] = Instance.new("TextLabel", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextLabel_12"]["TextWrapped"] = true;
+LMG2L["TextLabel_12"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_12"]["TextScaled"] = true;
+LMG2L["TextLabel_12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_12"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_12"]["Size"] = UDim2.new(0, 288, 0, 62);
+LMG2L["TextLabel_12"]["Text"] = [[bebuos42 gui v3]];
+LMG2L["TextLabel_12"]["Position"] = UDim2.new(0, 32, 0, 2);
+
+
+LMG2L["TextButton22_13"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton22_13"]["TextWrapped"] = true;
+LMG2L["TextButton22_13"]["BorderSizePixel"] = 2;
+LMG2L["TextButton22_13"]["TextScaled"] = true;
+LMG2L["TextButton22_13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton22_13"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton22_13"]["Size"] = UDim2.new(0, 108, 0, 50);
+LMG2L["TextButton22_13"]["BorderColor3"] = Color3.fromRGB(11, 178, 257);
+LMG2L["TextButton22_13"]["Text"] = [[scary 1]];
+LMG2L["TextButton22_13"]["Name"] = [[TextButton22]];
+LMG2L["TextButton22_13"]["Position"] = UDim2.new(0, 118, 0, 394);
+
+
+LMG2L["LocalScript_14"] = Instance.new("LocalScript", LMG2L["TextButton22_13"]);
+
+
+
+LMG2L["TextButton9_15"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton9_15"]["TextWrapped"] = true;
+LMG2L["TextButton9_15"]["BorderSizePixel"] = 2;
+LMG2L["TextButton9_15"]["TextScaled"] = true;
+LMG2L["TextButton9_15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton9_15"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton9_15"]["Size"] = UDim2.new(0, 108, 0, 50);
+LMG2L["TextButton9_15"]["BorderColor3"] = Color3.fromRGB(11, 178, 255);
+LMG2L["TextButton9_15"]["Text"] = [[disco]];
+LMG2L["TextButton9_15"]["Name"] = [[TextButton9]];
+LMG2L["TextButton9_15"]["Position"] = UDim2.new(0, 232, 0, 220);
+
+
+LMG2L["LocalScript_16"] = Instance.new("LocalScript", LMG2L["TextButton9_15"]);
+
+
+
+LMG2L["TextButton17_17"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton17_17"]["TextWrapped"] = true;
+LMG2L["TextButton17_17"]["BorderSizePixel"] = 2;
+LMG2L["TextButton17_17"]["TextScaled"] = true;
+LMG2L["TextButton17_17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton17_17"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton17_17"]["Size"] = UDim2.new(0, 108, 0, 50);
+LMG2L["TextButton17_17"]["BorderColor3"] = Color3.fromRGB(11, 178, 255);
+LMG2L["TextButton17_17"]["Text"] = [[coolkiddtheme]];
+LMG2L["TextButton17_17"]["Name"] = [[TextButton17]];
+LMG2L["TextButton17_17"]["Position"] = UDim2.new(0, 4, 0, 336);
+
+
+LMG2L["LocalScript_18"] = Instance.new("LocalScript", LMG2L["TextButton17_17"]);
+
+
+
+LMG2L["TextButton3_19"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton3_19"]["TextWrapped"] = true;
+LMG2L["TextButton3_19"]["BorderSizePixel"] = 2;
+LMG2L["TextButton3_19"]["TextScaled"] = true;
+LMG2L["TextButton3_19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton3_19"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton3_19"]["Size"] = UDim2.new(0, 108, 0, 50);
+LMG2L["TextButton3_19"]["BorderColor3"] = Color3.fromRGB(11, 178, 255);
+LMG2L["TextButton3_19"]["Text"] = [[skybox]];
+LMG2L["TextButton3_19"]["Name"] = [[TextButton3]];
+LMG2L["TextButton3_19"]["Position"] = UDim2.new(0, 232, 0, 104);
+
+
+LMG2L["LocalScript_1a"] = Instance.new("LocalScript", LMG2L["TextButton3_19"]);
+
+
+
+LMG2L["TextButton_1b"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton_1b"]["TextWrapped"] = true;
+LMG2L["TextButton_1b"]["BorderSizePixel"] = 2;
+LMG2L["TextButton_1b"]["TextScaled"] = true;
+LMG2L["TextButton_1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_1b"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton_1b"]["Size"] = UDim2.new(0, 72, 0, 38);
+LMG2L["TextButton_1b"]["BorderColor3"] = Color3.fromRGB(11, 178, 255);
+LMG2L["TextButton_1b"]["Text"] = [[theme]];
+LMG2L["TextButton_1b"]["Position"] = UDim2.new(0, 260, 0, 60);
+
+
+LMG2L["LocalScript_1c"] = Instance.new("LocalScript", LMG2L["TextButton_1b"]);
+
+
+
+LMG2L["TextButton18_1d"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton18_1d"]["TextWrapped"] = true;
+LMG2L["TextButton18_1d"]["BorderSizePixel"] = 2;
+LMG2L["TextButton18_1d"]["TextScaled"] = true;
+LMG2L["TextButton18_1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton18_1d"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton18_1d"]["Size"] = UDim2.new(0, 108, 0, 50);
+LMG2L["TextButton18_1d"]["BorderColor3"] = Color3.fromRGB(11, 178, 255);
+LMG2L["TextButton18_1d"]["Text"] = [[message coolkidd]];
+LMG2L["TextButton18_1d"]["Name"] = [[TextButton18]];
+LMG2L["TextButton18_1d"]["Position"] = UDim2.new(0, 118, 0, 336);
+
+
+LMG2L["LocalScript_1e"] = Instance.new("LocalScript", LMG2L["TextButton18_1d"]);
+
+
+
+LMG2L["TextLabel3_1f"] = Instance.new("TextLabel", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextLabel3_1f"]["TextWrapped"] = true;
+LMG2L["TextLabel3_1f"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel3_1f"]["TextScaled"] = true;
+LMG2L["TextLabel3_1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel3_1f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel3_1f"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel3_1f"]["Size"] = UDim2.new(0, 158, 0, 28);
+LMG2L["TextLabel3_1f"]["Text"] = [[@bebuos42]];
+LMG2L["TextLabel3_1f"]["Name"] = [[TextLabel3]];
+LMG2L["TextLabel3_1f"]["Position"] = UDim2.new(0, 66, 0, 70);
+
+
+LMG2L["TextButton11_20"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton11_20"]["TextWrapped"] = true;
+LMG2L["TextButton11_20"]["BorderSizePixel"] = 2;
+LMG2L["TextButton11_20"]["TextScaled"] = true;
+LMG2L["TextButton11_20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton11_20"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton11_20"]["Size"] = UDim2.new(0, 108, 0, 50);
+LMG2L["TextButton11_20"]["BorderColor3"] = Color3.fromRGB(11, 178, 255);
+LMG2L["TextButton11_20"]["Text"] = [[hint]];
+LMG2L["TextButton11_20"]["Name"] = [[TextButton11]];
+LMG2L["TextButton11_20"]["Position"] = UDim2.new(0, 4, 0, 278);
+
+
+LMG2L["LocalScript_21"] = Instance.new("LocalScript", LMG2L["TextButton11_20"]);
+
+
+
+LMG2L["TextButton4_22"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton4_22"]["TextWrapped"] = true;
+LMG2L["TextButton4_22"]["BorderSizePixel"] = 2;
+LMG2L["TextButton4_22"]["TextScaled"] = true;
+LMG2L["TextButton4_22"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton4_22"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton4_22"]["Size"] = UDim2.new(0, 108, 0, 50);
+LMG2L["TextButton4_22"]["BorderColor3"] = Color3.fromRGB(11, 178, 255);
+LMG2L["TextButton4_22"]["Text"] = [[decal 2]];
+LMG2L["TextButton4_22"]["Name"] = [[TextButton4]];
+LMG2L["TextButton4_22"]["Position"] = UDim2.new(0, 118, 0, 104);
+
+
+LMG2L["LocalScript_23"] = Instance.new("LocalScript", LMG2L["TextButton4_22"]);
+
+
+
+LMG2L["TextButton10_24"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton10_24"]["TextWrapped"] = true;
+LMG2L["TextButton10_24"]["BorderSizePixel"] = 2;
+LMG2L["TextButton10_24"]["TextScaled"] = true;
+LMG2L["TextButton10_24"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton10_24"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton10_24"]["Size"] = UDim2.new(0, 108, 0, 50);
+LMG2L["TextButton10_24"]["BorderColor3"] = Color3.fromRGB(11, 178, 255);
+LMG2L["TextButton10_24"]["Text"] = [[rainbow]];
+LMG2L["TextButton10_24"]["Name"] = [[TextButton10]];
+LMG2L["TextButton10_24"]["Position"] = UDim2.new(0, 4, 0, 220);
+
+
+LMG2L["LocalScript_25"] = Instance.new("LocalScript", LMG2L["TextButton10_24"]);
+
+
+
+LMG2L["TextButton21_26"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton21_26"]["TextWrapped"] = true;
+LMG2L["TextButton21_26"]["BorderSizePixel"] = 2;
+LMG2L["TextButton21_26"]["TextScaled"] = true;
+LMG2L["TextButton21_26"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton21_26"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton21_26"]["Size"] = UDim2.new(0, 108, 0, 50);
+LMG2L["TextButton21_26"]["BorderColor3"] = Color3.fromRGB(11, 178, 257);
+LMG2L["TextButton21_26"]["Text"] = [[jumpscare]];
+LMG2L["TextButton21_26"]["Name"] = [[TextButton21]];
+LMG2L["TextButton21_26"]["Position"] = UDim2.new(0, 4, 0, 394);
+
+
+LMG2L["LocalScript_27"] = Instance.new("LocalScript", LMG2L["TextButton21_26"]);
+
+
+
+LMG2L["ImageLabel_28"] = Instance.new("ImageLabel", LMG2L["ScrollingFrame_4"]);
+LMG2L["ImageLabel_28"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- LMG2L["ImageLabel_28"]["ImageContent"] = ;
+LMG2L["ImageLabel_28"]["Image"] = [[rbxassetid://121648159358932]];
+LMG2L["ImageLabel_28"]["Size"] = UDim2.new(0, 344, 0, 194);
+LMG2L["ImageLabel_28"]["Position"] = UDim2.new(0, 4, 0, 522);
+
+
+LMG2L["TextButton19_29"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton19_29"]["TextWrapped"] = true;
+LMG2L["TextButton19_29"]["BorderSizePixel"] = 2;
+LMG2L["TextButton19_29"]["TextScaled"] = true;
+LMG2L["TextButton19_29"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton19_29"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton19_29"]["Size"] = UDim2.new(0, 108, 0, 50);
+LMG2L["TextButton19_29"]["BorderColor3"] = Color3.fromRGB(11, 178, 255);
+LMG2L["TextButton19_29"]["Text"] = [[KoopKidd message]];
+LMG2L["TextButton19_29"]["Name"] = [[TextButton19]];
+LMG2L["TextButton19_29"]["Position"] = UDim2.new(0, 232, 0, 336);
+
+
+LMG2L["LocalScript_2a"] = Instance.new("LocalScript", LMG2L["TextButton19_29"]);
+
+
+
+LMG2L["TextButton25_2b"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton25_2b"]["TextWrapped"] = true;
+LMG2L["TextButton25_2b"]["BorderSizePixel"] = 2;
+LMG2L["TextButton25_2b"]["TextScaled"] = true;
+LMG2L["TextButton25_2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton25_2b"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton25_2b"]["Size"] = UDim2.new(0, 334, 0, 28);
+LMG2L["TextButton25_2b"]["BorderColor3"] = Color3.fromRGB(11, 178, 257);
+LMG2L["TextButton25_2b"]["Text"] = [[kick all]];
+LMG2L["TextButton25_2b"]["Name"] = [[TextButton25]];
+LMG2L["TextButton25_2b"]["Position"] = UDim2.new(0, 4, 0, 454);
+
+
+LMG2L["LocalScript_2c"] = Instance.new("LocalScript", LMG2L["TextButton25_2b"]);
+
+
+
+LMG2L["TextButton23_2d"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton23_2d"]["TextWrapped"] = true;
+LMG2L["TextButton23_2d"]["TextStrokeTransparency"] = 0;
+LMG2L["TextButton23_2d"]["BorderSizePixel"] = 2;
+LMG2L["TextButton23_2d"]["TextStrokeColor3"] = Color3.fromRGB(255, 0, 0);
+LMG2L["TextButton23_2d"]["TextScaled"] = true;
+LMG2L["TextButton23_2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton23_2d"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton23_2d"]["Size"] = UDim2.new(0, 108, 0, 50);
+LMG2L["TextButton23_2d"]["BorderColor3"] = Color3.fromRGB(11, 178, 257);
+LMG2L["TextButton23_2d"]["Text"] = [[scary 7]];
+LMG2L["TextButton23_2d"]["Name"] = [[TextButton23]];
+LMG2L["TextButton23_2d"]["Position"] = UDim2.new(0, 232, 0, 394);
+
+
+LMG2L["LocalScript_2e"] = Instance.new("LocalScript", LMG2L["TextButton23_2d"]);
+
+
+
+LMG2L["TextLabel4_2f"] = Instance.new("TextLabel", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextLabel4_2f"]["TextWrapped"] = true;
+LMG2L["TextLabel4_2f"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel4_2f"]["TextScaled"] = true;
+LMG2L["TextLabel4_2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel4_2f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel4_2f"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel4_2f"]["Size"] = UDim2.new(0, 336, 0, 30);
+LMG2L["TextLabel4_2f"]["Text"] = [[🙏 follow bebuos42 my 🙏]];
+LMG2L["TextLabel4_2f"]["Name"] = [[TextLabel4]];
+LMG2L["TextLabel4_2f"]["Position"] = UDim2.new(0, 4, 0, 486);
+
+
+LMG2L["TextButton16_30"] = Instance.new("TextButton", LMG2L["ScrollingFrame_4"]);
+LMG2L["TextButton16_30"]["TextWrapped"] = true;
+LMG2L["TextButton16_30"]["BorderSizePixel"] = 2;
+LMG2L["TextButton16_30"]["TextScaled"] = true;
+LMG2L["TextButton16_30"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton16_30"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
+LMG2L["TextButton16_30"]["Size"] = UDim2.new(0, 108, 0, 50);
+LMG2L["TextButton16_30"]["BorderColor3"] = Color3.fromRGB(11, 178, 255);
+LMG2L["TextButton16_30"]["Text"] = [[koopkiddfull]];
+LMG2L["TextButton16_30"]["Name"] = [[TextButton16]];
+LMG2L["TextButton16_30"]["Position"] = UDim2.new(0, 232, 0, 278);
+
+
+LMG2L["LocalScript_31"] = Instance.new("LocalScript", LMG2L["TextButton16_30"]);
+
+
+
+local function C_3()
+	local script = LMG2L["LocalScript_3"];
+	local UIS = game:GetService('UserInputService')
+	
+	
+	
+	local frame = script.Parent
+	
+	
+	
+	local dragToggle = nil
+	
+	local dragSpeed = 0.1
+	
+	local dragStart = nil
+	
+	local startPos = nil
+	
+	
+	
+	local function updateInput(input)
+	
+		local delta = input.Position - dragStart
+	
+	
+	
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+	
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	
+	
+	
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	
+	end
+	
+	
+	
+	frame.InputBegan:Connect(function(input)
+	
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+	
+			dragToggle = true
+	
+			dragStart = input.Position
+	
+			startPos = frame.Position
+	
+	
+	
+			input.Changed:Connect(function()
+	
+				if input.UserInputState == Enum.UserInputState.End then
+	
+					dragToggle = false
+	
+				end
+	
+			end)
+	
+		end
+	
+	end)
+	
+	
+	
+	
+	
+	UIS.InputChanged:Connect(function(input)
+	
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	
+			if dragToggle then
+	
+				updateInput(input)
+	
+			end
+	
+		end
+	
+	end)	
+end;
+task.spawn(C_3);
+local function C_6()
+	local script = LMG2L["LocalScript_6"];
+	local button = script.Parent	
+	button.MouseButton1Click:Connect(function()	
+	local sky = Instance.new("Sky")	
+	        sky.Parent = game.Lighting	
+	        for _, face in pairs({"Bk", "Dn", "Ft", "Lf", "Rt", "Up"}) do	
+	            sky["Skybox"..face] = "rbxassetid://158118263"	
+	        end	
+	
+	Spooky = Instance.new("Sound", game.Workspace)	
+	Spooky.Name = "Spooky"	
+	Spooky.SoundId = "rbxassetid://1839246711"	
+	Spooky.Volume = 20	
+	Spooky.Looped = true	
+	Spooky:Play()	
+	
+	for _, v in pairs(game:GetDescendants()) do	
+	            if v:IsA("Part") or v:IsA("MeshPart") or v:IsA("Character") then	
+	                for _, face in pairs(Enum.NormalId:GetEnumItems()) do	
+	                    local decal = Instance.new("Decal")	
+	                    decal.Texture = "rbxassetid://158118263"	
+	                    decal.Face = face	
+	                    decal.Parent = v	
+	                end	
+	            end	
+	        end	
+	
+	-- MLG Particles Script By ItsKittyyyGD	
+	
+	-- no skid this skidders	
+	
+	game.Players.PlayerAdded:Connect(function(player)	
+	    player.CharacterAdded:Connect(function(character)	
+	        local torso = character:FindFirstChild("Torso") or character:FindFirstChild("UpperTorso")	
+	        if torso then	
+	            local fe = Instance.new("ParticleEmitter", torso)	
+	            fe.Texture = "rbxassetid://158118263"	
+	            fe.VelocitySpread = 50	
+	        end	
+	    end)	
+	end)	
+	
+	for _, player in pairs(game.Players:GetPlayers()) do	
+	    if player.Character then	
+	        local torso = player.Character:FindFirstChild("Torso") or player.Character:FindFirstChild("UpperTorso")	
+	        if torso then	
+	            local fe = Instance.new("ParticleEmitter", torso)	
+	            fe.Texture = "rbxassetid://158118263"	
+	            fe.VelocitySpread = 50	
+	        end	
+	    end	
+	end	
+	
+	end)	
+end;
+task.spawn(C_6);
+local function C_8()
+	local script = LMG2L["LocalScript_8"];
+	function click()	
+	script.Parent.MouseButton1Click:Connect(function()	
+			for i,v in next,workspace:children''do	
+				if(v:IsA'BasePart')then	
+					me=v;	
+					bbg=Instance.new('BillboardGui',me);	
+					bbg.Name='stuf';	
+					bbg.Adornee=me;	
+					bbg.Size=UDim2.new(2.5,0,2.5,0)	
+					--bbg.StudsOffset=Vector3.new(0,2,0)	
+					tlb=Instance.new'TextLabel';	
+					tlb.Text='666 666 666 666 666';	
+					tlb.Font='SourceSansBold';	
+					tlb.FontSize='Size48';	
+					tlb.TextColor3=Color3.new(1,0,0);	
+					tlb.Size=UDim2.new(1.25,0,1.25,0);	
+					tlb.Position=UDim2.new(-0.125,-22,-1.1,0);	
+					tlb.BackgroundTransparency=1;	
+					tlb.Parent=bbg;	
+				end;end;	
+			function xds(dd)	
+				for i,v in next,dd:children''do	
+					if(v:IsA'BasePart')then	
+						v.BrickColor=BrickColor.new'Really black';	
+						v.TopSurface='Smooth';	
+						v.BottomSurface='Smooth';	
+						s=Instance.new('SelectionBox',v);	
+						s.Adornee=v;	
+						s.Color=BrickColor.new'Really red';	
+						a=Instance.new('PointLight',v);	
+						a.Color=Color3.new(1,0,0);	
+						a.Range=15;	
+						a.Brightness=5;	
+						f=Instance.new('Fire',v);	
+						f.Size=19;	
+						f.Heat=22;	
+					end;	
+			
+					local dec = 'http://www.roblox.com/asset/?id=19399245';	
+					local fac = {'Front', 'Back', 'Left', 'Right', 'Top', 'Bottom'}	
+					--coroutine.wrap(function()	
+					--for ,_ in pairs(fac) do	
+					--local ddec = Instance.new("Decal", v)	
+					--ddec.Face = 	
+					--ddec.Texture = dec	
+					--end end)()	
+					if #(v:GetChildren())>0 then	
+						xds(v) 	
+					end	
+				end	
+			end	
+			xds(game.Workspace)	
+		end)	
+			
+	end	
+	
+	    script.Parent.MouseButton1Down:connect(click)	
+end;
+task.spawn(C_8);
+local function C_a()
+	local script = LMG2L["LocalScript_a"];
+	local button = script.Parent	
+	button.MouseButton1Click:Connect(function()	
+	for _, v in pairs(game:GetDescendants()) do	
+	            if v:IsA("Part") or v:IsA("MeshPart") or v:IsA("Character") then	
+	                for _, face in pairs(Enum.NormalId:GetEnumItems()) do	
+	                    local decal = Instance.new("Decal")	
+	                    decal.Texture = "rbxassetid://118841245164962"	
+	                    decal.Face = face	
+	                    decal.Parent = v	
+	                end	
+	            end	
+	        end	
+	
+	end)	
+end;
+task.spawn(C_a);
+local function C_c()
+	local script = LMG2L["LocalScript_c"];
+	function click()	
+	function exPro(root)	
+	    for _, v in pairs(root:GetChildren()) do	
+	        if v:IsA("BasePart") then	
+	            v.Material = "Plastic"	
+	            v.Transparency = 0	
+	            v.Anchored = false	
+	            v.Locked = false	
+	        end	
+	        exPro(v)	
+	    end	
+	end	
+	function asdf(root)	
+	    for _, v in pairs(root:GetChildren()) do	
+	        asdf(v)	
+	    end	
+	end	
+	exPro(game.Workspace)	
+	asdf(game.Workspace)	
+	end	
+	
+	script.Parent.MouseButton1Down:connect(click)	
+end;
+task.spawn(C_c);
+local function C_e()
+	local script = LMG2L["LocalScript_e"];
+	function click()	
+	script.Parent.MouseButton1Click:Connect(function()	
+	        for i, v in pairs(game.Players:GetChildren()) do	
+	            emit = Instance.new("ParticleEmitter")	
+	            emit.Parent = v.Character.Head	
+	            emit.Texture = "http://www.roblox.com/asset/?id=118841245164962"	
+	            emit.VelocitySpread = 999999999999999999999999999999999	
+	        end	
+	    end)	
+	end	
+	
+	script.Parent.MouseButton1Down:connect(click)	
+end;
+task.spawn(C_e);
+local function C_10()
+	local script = LMG2L["LocalScript_10"];
+	local button = script.Parent	
+	button.MouseButton1Click:Connect(function()	
+	local sky = Instance.new("Sky")	
+	        sky.Parent = game.Lighting	
+	        for _, face in pairs({"Bk", "Dn", "Ft", "Lf", "Rt", "Up"}) do	
+	            sky["Skybox"..face] = "rbxassetid://121648159358932"	
+	        end	
+	
+	end)	
+end;
+task.spawn(C_10);
+local function C_14()
+	local script = LMG2L["LocalScript_14"];
+	local button = script.Parent	
+	button.MouseButton1Click:Connect(function()	
+	 for i,v in pairs(game.Players:GetChildren()) do	
+	         if v.Character:FindFirstChild("Head") then	
+	            gui1=Instance.new("BillboardGui")	
+	            gui1.Parent = v.Character.Head	
+	            gui1.Adornee = v.Character.Head	
+	            gui1.Size=UDim2.new(2.5,0,2.5,0)	
+	            gui1.StudsOffset=Vector3.new(0,0.2,0)	
+	            gui1.AlwaysOnTop = true	
+	            text1=Instance.new("ImageLabel")	
+	            text1.Image = "rbxassetid://106913761939358"	
+	            text1.Size=UDim2.new(1,0,1,0)	
+	            text1.Position=UDim2.new(0,0,0,0)	
+	            text1.BackgroundTransparency = 1	
+	            text1.Parent=gui1	
+	            v.Character.Head.Transparency = 1	
+	         end	
+	      end	
+	
+	s = Instance.new("Sky")	
+	s.Name = "SKY"	
+	s.SkyboxBk = "http://www.roblox.com/asset/?id=95360019654007"	
+	s.SkyboxDn = "http://www.roblox.com/asset/?id=95360019654007"	
+	s.SkyboxFt = "http://www.roblox.com/asset/?id=95360019654007"	
+	s.SkyboxLf = "http://www.roblox.com/asset/?id=95360019654007"	
+	s.SkyboxRt = "http://www.roblox.com/asset/?id=95360019654007"	
+	s.SkyboxUp = "http://www.roblox.com/asset/?id=95360019654007"	
+	s.Parent = game.Lighting	
+	
+	    local l = Instance.new("ColorCorrectionEffect", game.Lighting)	
+	      l.Contrast, l.Saturation, l.Brightness = 200, 200, 0.420	
+	      l.TintColor = Color3.new(1, 0, 0)	
+	   	
+	      local running = true	
+	      while running do	
+	         l.Contrast = math.random(150, 250) -- Randomize contrast between 150 and 250	
+	         l.Saturation = math.random(150, 250) -- Randomize saturation between 150 and 250	
+	         l.Brightness = math.random(10, 50) / 100 -- Randomize brightness between 0.1 and 0.5	
+	         l.TintColor = Color3.fromHSV(math.random(), 2,2) -- Randomize tint color	
+	   	
+	         wait(0.2)	
+	      end	
+	
+	end)	
+end;
+task.spawn(C_14);
+local function C_16()
+	local script = LMG2L["LocalScript_16"];
+	function click()	
+	-- Rainbow Disco Script for Roblox	
+	-- Place this script in ServerScriptService	
+	local Lighting = game:GetService("Lighting")	
+	local TweenService = game:GetService("TweenService")	
+	-- Settings	
+	local changeSpeed = 1 -- Color change speed (in seconds)	
+	local colors = {	
+	Color3.fromRGB(255, 0, 0), -- Red	
+	Color3.fromRGB(255, 127, 0), -- Orange	
+	Color3.fromRGB(255, 255, 0), -- Yellow	
+	Color3.fromRGB(0, 255, 0), -- Green	
+	Color3.fromRGB(0, 0, 255), -- Blue	
+	Color3.fromRGB(75, 0, 130), -- Indigo	
+	Color3.fromRGB(148, 0, 211) -- Violet	
+	}	
+	local currentColorIndex = 10	
+	-- Function to change color	
+	local function changeColor()	
+	while true do	
+	currentColorIndex = currentColorIndex % #colors + 1	
+	local nextColor = colors[currentColorIndex]	
+	-- Create tween for smooth transition	
+	local tweenInfo = TweenInfo.new(	
+	changeSpeed,	
+	Enum.EasingStyle.Linear,	
+	Enum.EasingDirection.InOut	
+	)	
+	local goal = {	
+	Ambient = nextColor,	
+	OutdoorAmbient = nextColor,	
+	ColorShift_Top = nextColor	
+	}	
+	local tween = TweenService:Create(Lighting, tweenInfo, goal)	
+	tween:Play()	
+	wait(changeSpeed)	
+	end	
+	end	
+	-- Start the effect	
+	spawn(changeColor)	
+	    end	
+	    	
+	    script.Parent.MouseButton1Down:connect(click)	
+end;
+task.spawn(C_16);
+local function C_18()
+	local script = LMG2L["LocalScript_18"];
+	function onClick()	
+	        Instance.new("Sound").Parent = game.Workspace  game.Workspace.Sound.SoundId ="rbxassetid://1839246774" game.Workspace.Sound.Looped=true  game.Workspace.Sound:Play()	
+	    end	
+	    	
+	    script.Parent.MouseButton1Down:connect(onClick)	
+end;
+task.spawn(C_18);
+local function C_1a()
+	local script = LMG2L["LocalScript_1a"];
+	local button = script.Parent	
+	button.MouseButton1Click:Connect(function()	
+	local sky = Instance.new("Sky")	
+	        sky.Parent = game.Lighting	
+	        for _, face in pairs({"Bk", "Dn", "Ft", "Lf", "Rt", "Up"}) do	
+	            sky["Skybox"..face] = "rbxassetid://118841245164962"	
+	        end	
+	
+	end)	
+end;
+task.spawn(C_1a);
+local function C_1c()
+	local script = LMG2L["LocalScript_1c"];
+	function onClick()	
+	        Instance.new("Sound").Parent = game.Workspace  game.Workspace.Sound.SoundId ="rbxassetid://1839246711" game.Workspace.Sound.Looped=true  game.Workspace.Sound:Play()	
+	    end	
+	    	
+	    script.Parent.MouseButton1Down:connect(onClick)	
+end;
+task.spawn(C_1c);
+local function C_1e()
+	local script = LMG2L["LocalScript_1e"];
+	function click()	
+	local msg = Instance.new("Message")	
+	msg.Parent = workspace	
+	msg.Text = "team coolkidd join today! hacking"	
+	wait(3)	
+	msg:Destroy()	
+	end	
+	
+	    script.Parent.MouseButton1Down:connect(click)	
+end;
+task.spawn(C_1e);
+local function C_21()
+	local script = LMG2L["LocalScript_21"];
+	function click()	
+	local h = Instance.new("Hint")	
+	h.Parent = Workspace 	
+	h.Text = "🫲🤛hello world join bebuos42 kacking map🤜🫱 "	
+	wait(9999999999999)	
+	h:Remove()	
+	end	
+	
+	    script.Parent.MouseButton1Down:connect(click)	
+end;
+task.spawn(C_21);
+local function C_23()
+	local script = LMG2L["LocalScript_23"];
+	local button = script.Parent	
+	button.MouseButton1Click:Connect(function()	
+	for _, v in pairs(game:GetDescendants()) do	
+	            if v:IsA("Part") or v:IsA("MeshPart") or v:IsA("Character") then	
+	                for _, face in pairs(Enum.NormalId:GetEnumItems()) do	
+	                    local decal = Instance.new("Decal")	
+	                    decal.Texture = "rbxassetid://121648159358932"	
+	                    decal.Face = face	
+	                    decal.Parent = v	
+	                end	
+	            end	
+	        end	
+	
+	end)	
+end;
+task.spawn(C_23);
+local function C_25()
+	local script = LMG2L["LocalScript_25"];
+	local button = script.Parent	
+	button.MouseButton1Click:Connect(function()	
+	    while true do	
+	        for _, part in pairs(workspace:GetDescendants()) do	
+	            if part:IsA("BasePart") then	
+	                part.Color = Color3.new(math.random(), math.random(), math.random())                	
+	            end            	
+	        end        	
+	        wait(2)   	
+	    end	
+	
+	end)	
+end;
+task.spawn(C_25);
+local function C_27()
+	local script = LMG2L["LocalScript_27"];
+	function click()	
+	script.Parent.MouseButton1Click:Connect(function()	
+	        for i,v in pairs(game.Players:GetPlayers()) do	
+	            if v.Name ~= me and not v.PlayerGui:FindFirstChild("Screamer") and v:FindFirstChild("PlayerGui") then	
+	                spawn(function()	
+	                    local newgui = Instance.new("ScreenGui",v.PlayerGui)	
+	                    newgui.Name = "Screamer"	
+	                    local newimage = Instance.new("ImageLabel",newgui)	
+	                    newimage.Image = "http://www.roblox.com/asset/?id=121648159358932"	
+	                    newimage.Size = UDim2.new(1,1,1,1)	
+	                    local s = Instance.new("Sound",newgui)	
+	                    s.SoundId = "rbxassetid://0"	
+	                    s.Volume = 9999999999999999999999999999999999999	
+	                    s.Looped = true	
+	                    s:Play()	
+	                    print("Screamed "..v.Name)	
+	                    while wait(9) do	
+	                        	
+	                        newimage.Parent:Destroy()	
+	                        	
+	                    end	
+	                end)	
+	            end	
+	        end	
+	    end)	
+	end	
+	
+	script.Parent.MouseButton1Down:connect(click)	
+end;
+task.spawn(C_27);
+local function C_2a()
+	local script = LMG2L["LocalScript_2a"];
+	function click()	
+	local msg = Instance.new("Message")	
+	msg.Parent = workspace	
+	msg.Text = "team koopkidd join today! hacking"	
+	wait(3)	
+	msg:Destroy()	
+	end	
+	
+	    script.Parent.MouseButton1Down:connect(click)	
+end;
+task.spawn(C_2a);
+local function C_2c()
+	local script = LMG2L["LocalScript_2c"];
+	local button = script.Parent	
+	button.MouseButton1Click:Connect(function()	
+	     for _, player in pairs(game.Players:GetPlayers()) do	
+	            player:Kick("join bebuos42 today kick all ERROR (1001)")	
+	        end	
+	
+	end)	
+end;
+task.spawn(C_2c);
+local function C_2e()
+	local script = LMG2L["LocalScript_2e"];
+	local button = script.Parent	
+	button.MouseButton1Click:Connect(function()	
+	s = Instance.new("Sky")	
+	s.Name = "SKY"	
+	s.SkyboxBk = "http://www.roblox.com/asset/?id=95983668193386"	
+	s.SkyboxDn = "http://www.roblox.com/asset/?id=95983668193386"	
+	s.SkyboxFt = "http://www.roblox.com/asset/?id=95983668193386"	
+	s.SkyboxLf = "http://www.roblox.com/asset/?id=95983668193386"	
+	s.SkyboxRt = "http://www.roblox.com/asset/?id=95983668193386"	
+	s.SkyboxUp = "http://www.roblox.com/asset/?id=95983668193386"	
+	s.Parent = game.Lighting	
+	
+	  local l = Instance.new("ColorCorrectionEffect", game.Lighting)	
+	      l.Contrast, l.Saturation, l.Brightness = 200, 200, 0.420	
+	      l.TintColor = Color3.new(1, 0, 0)	
+	   	
+	      local running = true	
+	      while running do	
+	         l.Contrast = math.random(150, 250) -- Randomize contrast between 150 and 250	
+	         l.Saturation = math.random(150, 250) -- Randomize saturation between 150 and 250	
+	         l.Brightness = math.random(10, 50) / 100 -- Randomize brightness between 0.1 and 0.5	
+	 	
+	         wait(0.2)	
+	      end	
+	
+	end)	
+end;
+task.spawn(C_2e);
+local function C_31()
+	local script = LMG2L["LocalScript_31"];
+	local button = script.Parent	
+	button.MouseButton1Click:Connect(function()	
+	local sky = Instance.new("Sky")	
+	        sky.Parent = game.Lighting	
+	        for _, face in pairs({"Bk", "Dn", "Ft", "Lf", "Rt", "Up"}) do	
+	            sky["Skybox"..face] = "rbxassetid://122763754628141"	
+	        end	
+	
+	Spooky = Instance.new("Sound", game.Workspace)	
+	Spooky.Name = "Spooky"	
+	Spooky.SoundId = "rbxassetid://1847661821"	
+	Spooky.Volume = 20	
+	Spooky.Looped = true	
+	Spooky:Play()	
+	
+	for _, v in pairs(game:GetDescendants()) do	
+	            if v:IsA("Part") or v:IsA("MeshPart") or v:IsA("Character") then	
+	                for _, face in pairs(Enum.NormalId:GetEnumItems()) do	
+	                    local decal = Instance.new("Decal")	
+	                    decal.Texture = "rbxassetid://122763754628141"	
+	                    decal.Face = face	
+	                    decal.Parent = v	
+	                end	
+	            end	
+	        end	
+	
+	-- MLG Particles Script By ItsKittyyyGD	
+	
+	-- no skid this skidders	
+	
+	game.Players.PlayerAdded:Connect(function(player)	
+	    player.CharacterAdded:Connect(function(character)	
+	        local torso = character:FindFirstChild("Torso") or character:FindFirstChild("UpperTorso")	
+	        if torso then	
+	            local fe = Instance.new("ParticleEmitter", torso)	
+	            fe.Texture = "rbxassetid://122763754628141"	
+	            fe.VelocitySpread = 50	
+	        end	
+	    end)	
+	end)	
+	
+	for _, player in pairs(game.Players:GetPlayers()) do	
+	    if player.Character then	
+	        local torso = player.Character:FindFirstChild("Torso") or player.Character:FindFirstChild("UpperTorso")	
+	        if torso then	
+	            local fe = Instance.new("ParticleEmitter", torso)	
+	            fe.Texture = "rbxassetid://122763754628141"	
+	            fe.VelocitySpread = 50	
+	        end	
+	    end	
+	end	
+	
+	end)	
+end;
+task.spawn(C_31);
+
+return LMG2L["ScreenGui_1"], require;
