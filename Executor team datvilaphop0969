@@ -1,0 +1,184 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+
+designed using localmaze gui creator
+]=]
+
+local LMG2L = {};
+
+LMG2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+LMG2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+LMG2L["Frame_2"] = Instance.new("Frame", LMG2L["ScreenGui_1"]);
+LMG2L["Frame_2"]["BorderSizePixel"] = 2;
+LMG2L["Frame_2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["Frame_2"]["Size"] = UDim2.new(0, 332, 0, 272);
+LMG2L["Frame_2"]["Position"] = UDim2.new(0, 188, 0, 6);
+LMG2L["Frame_2"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+
+
+LMG2L["LocalScript_3"] = Instance.new("LocalScript", LMG2L["Frame_2"]);
+
+
+
+LMG2L["TextButton2_4"] = Instance.new("TextButton", LMG2L["Frame_2"]);
+LMG2L["TextButton2_4"]["TextWrapped"] = true;
+LMG2L["TextButton2_4"]["BorderSizePixel"] = 2;
+LMG2L["TextButton2_4"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton2_4"]["TextScaled"] = true;
+LMG2L["TextButton2_4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton2_4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton2_4"]["Size"] = UDim2.new(0, 74, 0, 46);
+LMG2L["TextButton2_4"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+LMG2L["TextButton2_4"]["Text"] = [[delete script]];
+LMG2L["TextButton2_4"]["Name"] = [[TextButton2]];
+LMG2L["TextButton2_4"]["Position"] = UDim2.new(0, 106, 0, 218);
+
+
+LMG2L["LocalScript_5"] = Instance.new("LocalScript", LMG2L["TextButton2_4"]);
+
+
+
+LMG2L["TextBox_6"] = Instance.new("TextBox", LMG2L["Frame_2"]);
+LMG2L["TextBox_6"]["BorderSizePixel"] = 4;
+LMG2L["TextBox_6"]["TextWrapped"] = true;
+LMG2L["TextBox_6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextBox_6"]["TextScaled"] = true;
+LMG2L["TextBox_6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextBox_6"]["Size"] = UDim2.new(0, 326, 0, 204);
+LMG2L["TextBox_6"]["Position"] = UDim2.new(0, 4, 0, 4);
+LMG2L["TextBox_6"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+LMG2L["TextBox_6"]["Text"] = [[script ?]];
+
+
+LMG2L["TextButton_7"] = Instance.new("TextButton", LMG2L["Frame_2"]);
+LMG2L["TextButton_7"]["TextWrapped"] = true;
+LMG2L["TextButton_7"]["BorderSizePixel"] = 2;
+LMG2L["TextButton_7"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_7"]["TextScaled"] = true;
+LMG2L["TextButton_7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_7"]["Size"] = UDim2.new(0, 90, 0, 46);
+LMG2L["TextButton_7"]["BorderColor3"] = Color3.fromRGB(255, 0, 0);
+LMG2L["TextButton_7"]["Text"] = [[executor]];
+LMG2L["TextButton_7"]["Position"] = UDim2.new(0, 6, 0, 218);
+
+
+LMG2L["LocalScript_8"] = Instance.new("LocalScript", LMG2L["TextButton_7"]);
+
+
+
+local function C_3()
+	local script = LMG2L["LocalScript_3"];
+	local UIS = game:GetService('UserInputService')
+	
+	
+	
+	local frame = script.Parent
+	
+	
+	
+	local dragToggle = nil
+	
+	local dragSpeed = 0
+	
+	local dragStart = nil
+	
+	local startPos = nil
+	
+	
+	
+	local function updateInput(input)
+	
+		local delta = input.Position - dragStart
+	
+	
+	
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+	
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	
+	
+	
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	
+	end
+	
+	
+	
+	frame.InputBegan:Connect(function(input)
+	
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+	
+			dragToggle = true
+	
+			dragStart = input.Position
+	
+			startPos = frame.Position
+	
+	
+	
+			input.Changed:Connect(function()
+	
+				if input.UserInputState == Enum.UserInputState.End then
+	
+					dragToggle = false
+	
+				end
+	
+			end)
+	
+		end
+	
+	end)
+	
+	
+	
+	
+	
+	UIS.InputChanged:Connect(function(input)
+	
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	
+			if dragToggle then
+	
+				updateInput(input)
+	
+			end
+	
+		end
+	
+	end)	
+end;
+task.spawn(C_3);
+local function C_5()
+	local script = LMG2L["LocalScript_5"];
+	local button = script.Parent	
+	local textBox = button.Parent:WaitForChild("TextBox")	
+	button.MouseButton1Click:Connect(function()	
+	textBox.Text = ""	
+	end)	
+end;
+task.spawn(C_5);
+local function C_8()
+	local script = LMG2L["LocalScript_8"];
+	local button = script.Parent	
+	local textBox = button.Parent:WaitForChild("TextBox")	
+	button.MouseButton1Click:Connect(function()	
+	local code = textBox.Text	
+	if code ~= "" then	
+	pcall(function()	
+	loadstring(code)()	
+	end)	
+	end	
+	end)	
+end;
+task.spawn(C_8);
+
+return LMG2L["ScreenGui_1"], require;
