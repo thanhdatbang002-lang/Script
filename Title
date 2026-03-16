@@ -1,0 +1,33 @@
+-- Script đổi tên hiển thị sang màu xanh Hacker (back Neon)
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local head = character:WaitForChild("Head")
+
+-- Xóa tên cũ nếu có
+if head:FindFirstChild("HackerTag") then
+    head.HackerTag:Destroy()
+end
+
+-- Tạo BillboardGui để hiển thị tên trên đầu
+local billboard = Instance.new("BillboardGui")
+billboard.Name = "HackerTag"
+billboard.Parent = head
+billboard.Size = UDim2.new(0, 200, 0, 50)
+billboard.Adornee = head
+billboard.AlwaysOnTop = true
+billboard.ExtentsOffset = Vector3.new(0, 3, 0) -- Độ cao của tên
+
+-- Tạo TextLabel cho cái tên tughers
+local label = Instance.new("TextLabel")
+label.Parent = billboard
+label.Size = UDim2.new(1, 0, 1, 0)
+label.BackgroundTransparency = 1
+label.Text = "tughers85" -- Tên bạn muốn hiển thị
+label.TextColor3 = Color3.fromRGB(0, 0, 0) -- Màu xanh lá cực sáng
+label.TextStrokeColor3 = Color3.fromRGB(255,255,255) -- Viền trắng đậm chất hacker
+label.TextStrokeTransparency = 0
+label.TextScaled = true
+label.Font = Enum.Font.Code -- Font kiểu lập trình
+label.RichText = true
+
+print("Đã đổi tên thành tughers85 với màu đen Hacker!")
